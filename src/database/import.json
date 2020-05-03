@@ -1,0 +1,21 @@
+[{
+  "_id": {
+    "$oid": "5ead9198f50d2020985ca6ca"
+  },
+  "name": "eric",
+  "email": "eric@eric.br",
+  "password": "123",
+  "createdAt": {
+    "$date": "2020-05-02T15:28:24.056Z"
+  }
+},{
+  "_id": {
+    "$oid": "5ead9241ef19840c68fa2de3"
+  },
+  "name": "ericsilva",
+  "email": "ericsilva@eric.br",
+  "password": "1234",
+  "createdAt": {
+    "$date": "2020-05-02T15:31:13.643Z"
+  }
+}]
