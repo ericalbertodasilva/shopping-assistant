@@ -40,17 +40,17 @@ module.exports = {
         const shop = Shop.find({
             location: {
                 $near: {
-                    $maxDistance: 1000,
+                    $maxDistance: 100000,
                     $geometry: {
                         type: "Point",
                         coordinates: [longitude, latitude]
                     }
                 }
             }
-           }).find((error, results) => {
+        }).find((error, results) => {
             if (error) console.log(error);
             console.log(JSON.stringify(results, 0, 2));
-           });
+        });
         return response.json(shop);
     }
 

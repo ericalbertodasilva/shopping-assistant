@@ -3,12 +3,12 @@ const mongoose = require('../database');
 const ProductScheme = mongoose.Schema({
     name:{
         type: String,
-        required:true,
+        require:true,
     },
     code: {
         type: String,
         unique: true,
-        required: true,
+        require: true,
     },
     linkImg:{
         type: String,
@@ -25,6 +25,11 @@ const ProductScheme = mongoose.Schema({
     assessments:{
         type: Map,
         of: String,
+    },
+    shop:{
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'Shop',
+        require: true,
     },
     createdAt: {
         type: Date,
