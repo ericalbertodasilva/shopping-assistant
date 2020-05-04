@@ -1,6 +1,6 @@
 # Backend da Assistente de Compras Amada
 
-    Amada foi desenvolvida para facilitar as compras online das pessoas que não tem costume de usar e comece e integrar as api do Universo Americanas.
+Amada foi desenvolvida para facilitar as compras online das pessoas que não tem costume de usar e comece e integrar as api do Universo Americanas.
 
 * Tecnologia utilizadas
 * node.js 12.16.1
@@ -30,11 +30,11 @@ Aplicação pode ser executada via Docker
 
 
 ### Equipe de desenvolvimento
-Dev - Eric Alberto da Silva - https://github.com/ericalbertodasilva/
-Dev - Renan Siqueira Antonio - https://github.com/renan-siqueira/
-UX/design - Sara Margarido - https://github.com/saramargarido
-Business - Claudio Marques
-Marketing - Karine Stefany de Moura Matos
+* Dev - Eric Alberto da Silva - https://github.com/ericalbertodasilva/
+* Dev - Renan Siqueira Antonio - https://github.com/renan-siqueira/
+* UX/design - Sara Margarido - https://github.com/saramargarido
+* Business - Claudio Marques
+* Marketing - Karine Stefany de Moura Matos
 
 ### Plataforma Serviço:
 Heroku Backend
