@@ -19,10 +19,13 @@ const ProductScheme = mongoose.Schema({
     information:{
         type: String,
     },
-    datasheet:{
+    evaluation:{
         type: String,
     },
-    assessments:{
+    price:{
+        type: String,
+    },
+    datasheet:{
         type: Map,
         of: String,
     },

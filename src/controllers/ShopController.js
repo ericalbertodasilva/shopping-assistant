@@ -14,8 +14,8 @@ module.exports = {
     },
 
     async listAll(request , response){
-        const shoijdsp = await Shop.find({});
-        return response.json(shop);
+        const shops = await Shop.find({});
+        return response.json(shops);
     },
 
     async findById(request , response){
@@ -26,7 +26,7 @@ module.exports = {
 
     async listAllZipCodeSorting(request , response){
         const {zipCode} = request.params;
-        const shop = await shop.find({
+        const shop = await Shop.find({
             address:{
                 zipCode: zipCode
             }
@@ -37,7 +37,7 @@ module.exports = {
 
     async listAllCoodinatesSorting(request , response){
         const {longitude, latitude} = request.params;
-        const shop = Shop.find({
+        const shop = await Shop.find({
             location: {
                 $near: {
                     $maxDistance: 100000,
@@ -49,7 +49,7 @@ module.exports = {
             }
         }).find((error, results) => {
             if (error) console.log(error);
-            console.log(JSON.stringify(results, 0, 2));
+            //console.log(JSON.stringify(results, 0, 2));
         });
         return response.json(shop);
     }

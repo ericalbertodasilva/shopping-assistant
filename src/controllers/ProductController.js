@@ -25,7 +25,7 @@ module.exports = {
 
     async findByProductContains(request , response){
         const {contains} = request.params;
-        const product = await Product.find({name:/contains/i});
+        const product = await Product.find({ "name": { "$regex": contains , "$options" : "i" } });
         return response.json(product);
     }
 };
